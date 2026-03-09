@@ -48,8 +48,6 @@ body {
     text-wrap: balance;
   }
 }
-
-/* Custom animations */
 @keyframes float {
   0%,
   100% {
@@ -136,8 +134,6 @@ body {
 .animate-slide-in-left {
   animation: slideInLeft 0.8s ease-out forwards;
 }
-
-/* Staggered animations */
 .stagger-1 {
   animation-delay: 0.1s;
 }
@@ -157,13 +153,9 @@ body {
 .stagger-5 {
   animation-delay: 0.5s;
 }
-
-/* Gradient text */
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400;
 }
-
-/* Stylish card */
 .stylish-card {
   @apply relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 shadow-md hover:shadow-xl transition-all duration-300;
 }
@@ -183,8 +175,6 @@ body {
 .stylish-card:hover::before {
   opacity: 1;
 }
-
-/* Image hover effect */
 .image-hover-zoom {
   @apply overflow-hidden;
 }
@@ -196,8 +186,6 @@ body {
 .image-hover-zoom:hover img {
   @apply scale-110;
 }
-
-/* Fancy button */
 .fancy-button {
   @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-blue-600 text-white rounded-md hover:bg-blue-700;
 }
@@ -205,8 +193,6 @@ body {
 .fancy-button-outline {
   @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-slate-700 rounded-md hover:border-blue-600 dark:hover:border-blue-500;
 }
-
-/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(30px);

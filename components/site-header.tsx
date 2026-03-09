@@ -13,8 +13,6 @@ export function SiteHeader() {
           <Link href="/" className="text-xl font-serif font-bold">
             Polygon
           </Link>
-
-          {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden focus:outline-none"
@@ -32,8 +30,6 @@ export function SiteHeader() {
               ></span>
             </div>
           </button>
-
-          {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-600 hover:text-black transition-colors">
               Projects
@@ -65,8 +61,6 @@ export function SiteHeader() {
           </nav>
         </div>
       </div>
-
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-b border-gray-200">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">

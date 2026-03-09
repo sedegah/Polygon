@@ -10,7 +10,6 @@ export function ImageDirectory({ projectId }: ImageDirectoryProps) {
   const [isImageAvailable, setIsImageAvailable] = useState(false)
 
   useEffect(() => {
-    // Check if the image exists
     const img = new Image()
     img.src = `/images/projects/${projectId}.png`
     img.onload = () => setIsImageAvailable(true)

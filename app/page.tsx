@@ -8,7 +8,6 @@ import { projects } from "@/lib/projects"
 
 export default function Home() {
   useEffect(() => {
-    // Scroll reveal animation
     const revealElements = document.querySelectorAll(".reveal")
 
     const revealOnScroll = () => {
@@ -24,7 +23,7 @@ export default function Home() {
     }
 
     window.addEventListener("scroll", revealOnScroll)
-    revealOnScroll() // Initial check
+  revealOnScroll()
 
     return () => window.removeEventListener("scroll", revealOnScroll)
   }, [])
@@ -34,7 +33,6 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow pt-24">
-        {/* Hero Section with animated background */}
         <section className="relative py-24 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 dark:bg-blue-900 rounded-full filter blur-[100px] opacity-20 animate-float"></div>
@@ -57,8 +55,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Projects Section */}
         <section className="container py-16">
           <h2 className="text-3xl font-bold mb-16 reveal">Featured Projects</h2>
           <div className="space-y-32">
@@ -67,8 +63,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {/* Call to action */}
         <section className="py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800/50 dark:to-indigo-900/30">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center reveal">

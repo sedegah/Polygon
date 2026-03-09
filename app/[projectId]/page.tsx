@@ -22,7 +22,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   }
 
   useEffect(() => {
-    // Scroll reveal animation
     const revealElements = document.querySelectorAll(".reveal")
 
     const revealOnScroll = () => {
@@ -38,7 +37,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     }
 
     window.addEventListener("scroll", revealOnScroll)
-    revealOnScroll() // Initial check
+  revealOnScroll()
 
     return () => window.removeEventListener("scroll", revealOnScroll)
   }, [])
@@ -52,7 +51,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
       <main className="flex-grow pt-24">
         <div className="container py-16">
-          {/* Back link */}
           <Link
             href="/"
             className="inline-flex items-center text-foreground/70 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-12 group"
@@ -73,15 +71,11 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </svg>
             Back to all projects
           </Link>
-
-          {/* Project header */}
           <div className="max-w-4xl mb-16 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{project.name}</h1>
             <div className="w-24 h-1 bg-blue-600 dark:bg-blue-500 mb-8"></div>
             <p className="text-xl text-foreground/70 max-w-2xl">{project.description}</p>
           </div>
-
-          {/* Project image */}
           <div className="stylish-card mb-16 animate-scale-in">
             <Image
               src={imageUrl || "/placeholder.svg"}
@@ -92,8 +86,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               priority
             />
           </div>
-
-          {/* Project details */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-2 reveal">
               <h2 className="text-2xl font-bold mb-6">About this project</h2>
@@ -154,8 +146,6 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
           </div>
-
-          {/* Related projects section */}
           <div className="py-16 reveal">
             <h2 className="text-2xl font-bold mb-8">More Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

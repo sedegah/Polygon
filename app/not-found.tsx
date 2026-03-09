@@ -7,7 +7,6 @@ import { useEffect } from "react"
 
 export default function NotFound() {
   useEffect(() => {
-    // Add animation class after component mounts
     const element = document.getElementById("not-found-content")
     if (element) {
       element.classList.add("animate-fade-in-up")

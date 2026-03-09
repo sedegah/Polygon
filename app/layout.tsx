@@ -3,15 +3,11 @@ import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
-
-// Load Inter font for body text
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
 })
-
-// Load Playfair Display font for headings
 const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
